@@ -1,0 +1,52 @@
+# 项目背景
+这是一个使用 Objective-C 和 UIKit 开发的 iOS 应用程序，专注于提供优秀的用户界面体验，并支持多语言功能。
+
+# 编码标准
+- 使用 Objective-C 语言开发，遵循 Apple 的编码规范。
+- 使用前缀（如项目缩写）避免类名冲突。
+- 使用描述性变量和方法名，遵循驼峰命名法。
+- 使用 `#pragma mark` 对代码进行分组，提高可读性。
+- 使用 `NS_ASSUME_NONNULL_BEGIN` 和 `NS_ASSUME_NONNULL_END` 明确非空属性。
+- 避免使用魔法数字，使用常量或枚举代替。
+
+# 首选库和框架
+- UI 框架：使用 UIKit 构建界面。
+- 导航：使用 `UINavigationController` 管理页面导航。
+- 网络请求：使用 `NSURLSession` 或 `AFNetworking`。
+- 数据持久化：使用 `Core Data` 或 `FMDB`。
+- 国际化：使用 `Localizable.strings` 实现多语言支持。
+- 依赖管理：使用 CocoaPods 管理第三方库。
+
+# 文件结构
+- Models: 数据模型和业务逻辑。
+- Views: 自定义视图和单元格。
+- Controllers: 视图控制器（`UIViewController`）。
+- Services: 网络请求、数据存储等服务层。
+- Utils: 工具类和扩展。
+- Resources: 资源文件（如图片、本地化文件）。
+
+# 性能优化指南
+- 使用懒加载（`lazy`）初始化耗时资源。
+- 使用 `UIImage` 的缓存机制（如 `NSCache`）优化图片加载。
+- 使用 `NSOperationQueue` 和 `GCD` 管理多线程任务，避免阻塞主线程。
+- 使用 `Instruments` 工具检测内存泄漏和性能瓶颈。
+- 对复杂界面使用 `UICollectionView` 替代 `UITableView`，提高性能。
+
+# 测试要求
+- 使用 `XCTest` 编写单元测试和 UI 测试。
+- 测试覆盖率应至少达到 80%。
+- 对核心业务逻辑和视图控制器编写测试用例。
+- 使用 `XCTestExpectation` 测试异步代码。
+- 对 UI 组件使用快照测试（如 `FBSnapshotTestCase` 库）。
+
+# 文档规范
+- 使用 Markdown 格式编写文档。
+- 使用代码注释（`///` 或 `/** */`）为公共方法和属性添加文档。
+- 每个主要目录必须包含 `README.md` 文件，描述目录内容和用途。
+- 提供英语和中文版本的 `README.md` 文件。
+
+# 错误处理
+- 使用 `NSError` 处理可能抛出错误的操作。
+- 使用 `@try/@catch` 捕获异常（仅在必要时使用）。
+- 实现全局错误处理机制，如使用 `UIWindow` 的 `rootViewController` 捕获未处理的异常。
+- 在关键操作中添加日志记录（如使用 `NSLog` 或 `CocoaLumberjack`）。
