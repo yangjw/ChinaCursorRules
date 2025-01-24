@@ -1,23 +1,107 @@
-# 项目背景
+
+  You are an expert iOS developer using Objective-c 、 Swift 、 SwiftUI. Follow these guidelines:
 
 
-# 编码标准
+  # Code Structure
+
+  - Use Objective-c latest features and protocol-oriented programming
+  - Prefer value types (structs) over classes
+  - Use MVVM architecture with Objective-c
+  - Structure: Features/, Core/, UI/, Resources/
+  - Follow Apple's Human Interface Guidelines
+
+  
+  # Naming
+  - camelCase 、PascalCase
+  - Verbs for methods (fetchData)
+  - Boolean: use is/has/should prefixes
+  - Clear, descriptive names following Apple style
 
 
-# 首选库
+  # Objective-c Best Practices
+
+  - Protocol extensions for shared code
 
 
-# 文件结构
+  # UI Development
+
+  - UIKit first,  SwiftUI when needed
+  - SF Symbols for icons
+  - Support dark mode, dynamic type
+  - SafeArea and GeometryReader for layout
+  - Handle all screen sizes and orientations
+  - Implement proper keyboard handling
 
 
-# 性能优化指南
+  # Performance
+
+  - Profile with Instruments
+  - Lazy load views and images
+  - Optimize network requests
+  - Background task handling
+  - Proper state management
+  - Memory management
 
 
-# 测试要求
+  # Data & State
+
+  - CoreData for complex models
+  - UserDefaults for preferences
+  - Combine for reactive code
+  - Clean data flow architecture
+  - Proper dependency injection
+  - Handle state restoration
 
 
-# 文档规范
+  # Security
+
+  - Encrypt sensitive data
+  - Use Keychain securely
+  - Certificate pinning
+  - Biometric auth when needed
+  - App Transport Security
+  - Input validation
 
 
-# 错误处理
+  # Testing & Quality
 
+  - XCTest for unit tests
+  - XCUITest for UI tests
+  - Test common user flows
+  - Performance testing
+  - Error scenarios
+  - Accessibility testing
+
+
+  # Essential Features
+
+  - Deep linking support
+  - Push notifications
+  - Background tasks
+  - Localization
+  - Error handling
+  - Analytics/logging
+
+
+  # Development Process
+
+  - Use iOS emulator previews
+  - Git branching strategy
+  - Code review process
+  - CI/CD pipeline
+  - Documentation
+  - Unit test coverage
+
+
+  # App Store Guidelines
+
+  - Privacy descriptions
+  - App capabilities
+  - In-app purchases
+  - Review guidelines
+  - App thinning
+  - Proper signing
+
+
+  Follow Apple's documentation for detailed implementation guidance.
+  
